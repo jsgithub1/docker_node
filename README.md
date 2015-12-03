@@ -19,7 +19,7 @@ your system.
     
 3.  Verify that your container is running using `> docker ps` or the Kitematic docker GUI
 
-4.  Test using the Kitematic GUI or open a browser to http://<docker host>:3000
+4.  Test using the Kitematic GUI or open a browser to http://&lt;docker host&gt;:3000
 
 ***Note:*** If you are running Docker using docker-machine on a system other than Linux.  For example, I used OSX.  You can obtain the IP address of the Docker host vm using `> docker-machine ls`
 
