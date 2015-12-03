@@ -12,7 +12,7 @@ your system.
 ## Building and Running Locally
 
 1.  Build the Docker image (from the docker_node project root directory).  
-    > docker build -t &lt;your organization or account&gt;/docker_node
+    > docker build -t &lt;your organization or account&gt;/docker_node .
    
 2.  Start a Docker container from your new image.  You can modify the arguments to the -p option to control the port the application uses on your Docker host.  This command uses the application default port of 3000.
     > docker run -p 3000:3000 -d &lt;your organization or account&gt;/docker_node
