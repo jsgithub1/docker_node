@@ -1,10 +1,12 @@
 FROM node:0.10.40
 MAINTAINER James Stuckey <james@krumplr.com>
 
-COPY . /app
+# Install dependencies in separate layer so they can be cached independent of our source code
+COPY package.json /app/package.json
 WORKDIR /app
+RUN npm install && npm cache clean
 
-RUN npm install
+COPY . /app
 
 EXPOSE 3000
 
